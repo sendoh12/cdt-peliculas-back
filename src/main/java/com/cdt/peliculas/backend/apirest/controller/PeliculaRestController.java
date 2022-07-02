@@ -35,7 +35,6 @@ public class PeliculaRestController {
 		return peliculaService.findAll();
 	}
 	
-	
 	@GetMapping("/peliculas/{id}")
 	public ResponseEntity<?> show(@PathVariable Long id) {
 		Optional<Pelicula> pelicula = null;
