@@ -54,6 +54,7 @@ public class PeliculaRestController {
 		return ResponseEntity.ok(pelicula);
 	}
 	
+	
 	@PutMapping("/peliculas/{id}")
 	public ResponseEntity<?> update(@RequestBody Pelicula pelicula, @PathVariable Long id) {
 		Pelicula peliculaEncontrada = peliculaService.findById(id).get();
